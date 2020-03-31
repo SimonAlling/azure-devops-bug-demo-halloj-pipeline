@@ -1,13 +1,13 @@
 stages:
-- stage: hallojStage
-  displayName: Halloj Stage
+- stage: foobarStage
+  displayName: Foobar Stage
   jobs:
-  - job: hallojJob
-    displayName: Halloj Job
+  - job: foobarJob
+    displayName: Foobar Job
     steps:
     - task: CmdLine@2
-      name: hallojTask
-      displayName: Halloj Task
+      name: foobarTask
+      displayName: Foobar Task
       inputs:
         script: |
-          echo "Halloj!"
+          echo "Foobar!"
