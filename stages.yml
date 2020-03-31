@@ -1,0 +1,13 @@
+stages:
+- stage: hallojStage
+  displayName: Halloj Stage
+  jobs:
+  - job: hallojJob
+    displayName: Halloj Job
+    steps:
+    - task: CmdLine@2
+      name: hallojTask
+      displayName: Halloj Task
+      inputs:
+        script: |
+          echo "Halloj!"
